@@ -1,0 +1,60 @@
+# Compiled Object files, Static and Dynamic libs (Shared Objects)
+*.o
+*.a
+*.so
+
+# Folders
+_obj/
+_test/
+
+# Output files
+*.exe
+*.test
+*.prof
+*.out
+*.cprof
+*.trace
+
+# Log files
+*.log
+
+# Binary files
+*.bin
+
+# Go binaries
+/bin/
+/pkg/
+/bin-*
+
+# IDE specific files (e.g. Visual Studio Code)
+.vscode/
+
+# Dependency directories (e.g. Golang modules)
+/vendor/
+
+# Compiled output
+*.test
+
+# Coverage directory
+/coverage/
+
+# Built application files
+/app
+
+# End of line character
+.idea/
+
+# .DS_Store files (macOS specific)
+.DS_Store
+
+# Environment file
+.env
+
+# Build files
+golang-book-store-backend
+
+# Local configuration file (e.g. Visual Studio Code)
+/.vscode/settings.json
+
+# Environment file
+.env

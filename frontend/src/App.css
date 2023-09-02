@@ -1,0 +1,70 @@
+
+/* Dark Theme Color Scheme */
+/* Background Colors */
+.bg-primary { background-color: #1E293B; }
+.bg-secondary { background-color: #2D3B4C; }
+.bg-accent { background-color: #F59E0B; }
+.bg-neutral { background-color: #2D3748; }
+.bg-dark { background-color: #0F172A; }
+
+/* Text Colors */
+.text-primary { color: #FFFFFF; }
+.text-secondary { color: #D1D5DB; }
+.text-accent { color: #1E293B; }
+.text-neutral { color: #E5E7EB; }
+.text-dark { color: #FFFFFF; }
+
+/* Border Colors */
+.border-primary { border-color: #1E293B; }
+.border-secondary { border-color: #2D3B4C; }
+.border-accent { border-color: #F59E0B; }
+.border-neutral { border-color: #2D3748; }
+.border-dark { border-color: #0F172A; }
+
+/* Additional Colors */
+.bg-success { background-color: #10B981; }
+.text-success { color: #10B981; }
+.border-success { border-color: #10B981; }
+
+.bg-error { background-color: #EF4444; }
+.text-error { color: #EF4444; }
+.border-error { border-color: #EF4444; }
+
+.bg-warning { background-color: #F97316; }
+.text-warning { color: #F97316; }
+.border-warning { border-color: #F97316; }
+
+.bg-info { background-color: #3B82F6; }
+.text-info { color: #3B82F6; }
+.border-info { border-color: #3B82F6; }
+
+/* Style for the focused state of the input */
+input:focus::placeholder {
+  color: transparent;
+}
+
+input:focus {
+  border-color: #F59E0B;
+  border-width: 2px;
+  padding-bottom: 8px;
+}
+
+.UserCheckBox::selection {
+  background-color: #F59E0B;
+  color: #FFFFFF;
+}
+
+/* Style for the focused state of the input */
+.UserCheckBox:focus {
+  border-color: #F59E0B;
+  border-width: 2px;
+  padding-bottom: 8px;
+}
+
+/* Style for the focused state of the input */
+.UserCheckBox:focus::placeholder {
+  color: transparent;
+}
+
+
+/* Path: src/App.css */
