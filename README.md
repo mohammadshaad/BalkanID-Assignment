@@ -19,8 +19,8 @@ Contains the Golang backend code for the BookStore web application. Built using 
 ## Setup
 
 ```bash
-git clone <repo_url>
-cd <folder_name>
+git clone https://github.com/mohammadshaad/balkanid-bookstore.git
+cd balkanid-bookstore
 docker-compose up
 ```
 
