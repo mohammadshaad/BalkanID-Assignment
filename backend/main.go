@@ -34,7 +34,7 @@ func main() {
 
 	// Enable CORS
 	app.Use(cors.New(cors.Config{
-		AllowOrigins: "http://localhost:5173",                       // Update with the actual URL of your React app
+		AllowOrigins: "http://localhost",                       // Update with the actual URL of your React app
 		AllowHeaders: "Origin, Content-Type, Accept, Authorization", // Include "Authorization" here
 	}))
 

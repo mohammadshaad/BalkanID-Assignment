@@ -1,0 +1,30 @@
+version: "3.8"
+
+services:
+  frontend:
+    build:
+      context: ./frontend # The directory containing your React frontend Dockerfile
+    ports:
+      - "80:80" 
+
+  backend:
+    build:
+      context: ./backend # The directory containing your Golang backend Dockerfile
+    ports:
+      - "8080:8080" 
+    depends_on:
+      - database 
+
+  database:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
+    ports:
+      - "5432:5432" 
+    volumes:
+      - dbdata:/var/lib/postgresql/data # Persist database data
+
+volumes:
+  dbdata:
