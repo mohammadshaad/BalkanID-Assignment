@@ -90,6 +90,7 @@ func defineAdminRoutes(app *fiber.App) {
 	admin.Delete("/book/:id", DeleteBookHandler)
 	admin.Get("/users", GetAllUsersHandler)
 	admin.Get("/user/:id", GetUserByIDHandler)
+	admin.Delete("/user/:id", DeleteUserHandler)
 	admin.Get("/book/:id/download", DownloadBookHandler)
 	admin.Get("/book/:book_id/reviews", GetBookReviewsHandler)
 	admin.Get("/cart", GetAllCartItemsHandler)

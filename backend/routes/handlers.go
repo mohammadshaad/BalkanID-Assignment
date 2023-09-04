@@ -980,9 +980,8 @@ func DeleteCartItemHandler(c *fiber.Ctx) error {
 	})
 }
 
-
 // Get the role of the user from the database
-func GetUserRoleHandler (c *fiber.Ctx) error {
+func GetUserRoleHandler(c *fiber.Ctx) error {
 	// Parse the user ID from the URL parameter
 	userID := c.Params("id")
 
@@ -994,7 +993,34 @@ func GetUserRoleHandler (c *fiber.Ctx) error {
 			"error": "User not found",
 		})
 	}
-    return c.JSON(fiber.Map{
-        "role": user.Role,
-    })
+	return c.JSON(fiber.Map{
+		"role": user.Role,
+	})
+}
+
+// Delete user handler
+func DeleteUserHandler(c *fiber.Ctx) error {
+	// Parse the user ID from the URL parameter
+	userID := c.Params("id")
+
+	// Find the user in the database
+	var user database.User
+	if err := database.GetDB().First(&user, userID).Error; err != nil {
+		// Handle database errors (e.g., no user with the given ID)
+		return c.Status(fiber.StatusNotFound).JSON(fiber.Map{
+			"error": "User not found",
+		})
+	}
+
+	// Delete the user from the database
+	if err := database.GetDB().Delete(&user).Error; err != nil {
+		return c.Status(fiber.StatusInternalServerError).JSON(fiber.Map{
+			"error": "Failed to delete user",
+		})
+	}
+
+	return c.JSON(fiber.Map{
+		"success": true,
+		"message": "User deleted successfully",
+	})
 }

@@ -71,6 +71,7 @@ const DashboardHome = () => {
         <h2 className="text-2xl font-semibold text-primary">Dashboard Home</h2>
         <div className="mt-4 mb-4 text-primary underline underline-offset-4 flex items-center justify-start gap-6">
           {/* Add links to other pages */}
+          <Link to="/admin">Dashboard</Link> {' '}
           <Link to="/admin/users">Users</Link> {' '}
           <Link to="/admin/books">Books</Link> {' '}
         </div>
