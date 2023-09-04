@@ -16,6 +16,14 @@ Contains the frontend code for the BookStore web application. Built using React.
 Contains the Golang backend code for the BookStore web application. Built using Node.js and Express.js, the backend is responsible for the server-side logic and database management.
 
 
+## Setup
+
+```bash
+git clone <repo_url>
+cd <folder_name>
+docker-compose up
+```
+
 
 ## Backend Documentation
 
