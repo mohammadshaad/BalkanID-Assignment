@@ -40,7 +40,6 @@ const UsersPage = () => {
           {/* Add links to other pages */}
           <Link to="/admin">Dashboard</Link> {' '}
           <Link to="/admin/books">Books</Link> {' '}
-          <Link to="/admin/products">Products</Link>
         </div>
         {isLoading ? (
           <p className="mt-4 text-secondary">Loading users...</p>

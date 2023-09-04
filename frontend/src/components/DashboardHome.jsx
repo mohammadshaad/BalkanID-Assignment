@@ -73,7 +73,6 @@ const DashboardHome = () => {
           {/* Add links to other pages */}
           <Link to="/admin/users">Users</Link> {' '}
           <Link to="/admin/books">Books</Link> {' '}
-          <Link to="/admin/products">Products</Link>
         </div>
         <p className="mt-4 text-secondary">
           Welcome to your dashboard! This is the home page of your dashboard.

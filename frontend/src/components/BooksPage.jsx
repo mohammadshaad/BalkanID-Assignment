@@ -51,18 +51,17 @@ const UserHome = () => {
 
   return (
     <div className="w-full h-full flex items-center justify-center bg-primary text-primary">
-      <div className="flex items-center justify-center flex-col gap-12 mb-20">
+      <div className="flex items-center justify-center flex-col gap-12 mb-20 ">
         <Navbar />
 
 
         {books && books.length > 0 ? (
-          <div className='w-full px-10'>
+          <div className='w-full px-40'>
             <h2 className="text-2xl font-semibold text-primary">Books Page</h2>
             <div className="mt-4 mb-4 text-primary underline underline-offset-4 flex items-center justify-start gap-6">
               {/* Add links to other pages */}
               <Link to="/admin">Dashboard</Link> {' '}
               <Link to="/admin/users">Users</Link> {' '}
-              <Link to="/admin/products">Products</Link>
             </div>
             <div className="grid grid-cols-3 gap-4"> {/* Adjust the number of columns as needed */}
               {books.map((book) => (
