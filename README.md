@@ -89,9 +89,6 @@ The Bookstore Application is a web-based platform that allows users to browse, p
 ### JWT Expiration
 - **Customization to Your Needs**: My JWT expiration is currently set to 24 hours. Depending on your specific use case, you may want to adjust this value to align with your application's requirements.
 
-### File Uploads
-- **Secure Handling**: If fields like "Image" and "Path" in the Book struct represent uploaded files, I understand the importance of implementing secure file upload handling in my application. This encompasses secure management of file storage and serving, ensuring the safety of user-uploaded content.
-
 # APIs Used
 ## User Registration
 
