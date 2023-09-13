@@ -337,7 +337,7 @@ The application reads configuration settings from environment variables. Here ar
 
 Example `.env` file:
 ```env
-DB_HOST=localhost
+DB_HOST=database
 DB_PORT=5432
 DB_NAME=book-store
 DB_USER=postgres
