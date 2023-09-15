@@ -1,6 +1,6 @@
 # Balkan ID Internship Project Documentation
 
-## Video Demo (Click on the image below to watch the video)
+## Video Demo (Click below to watch the video)
 [![Watch the video](https://pbs.twimg.com/media/F5ByhUsWEAAlf17?format=jpg&name=4096x4096)](https://drive.google.com/file/d/1TgnFMK-t4rgOHxZ_IyHYaY7Q8FiAZG12/view?usp=sharing)
 
 ## Introduction
