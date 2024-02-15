@@ -14,34 +14,26 @@ import (
 func main() {
 	fmt.Println("Welcome to the book store")
 
-	// Load environment variables from the .env file
 	if err := godotenv.Load(); err != nil {
 		panic("Error loading .env file")
 	}
 
-	// Define the database connection string using environment variables
 	database.InitDatabase()
 
-	// Open the database connection
 	db := database.GetDB()
 	defer database.CloseDB()
 
-	// Auto-migrate the models to create the necessary tables
 	database.AutoMigrateModels(db)
 
-	// Create a Fiber app
 	app := fiber.New()
 
-	// Enable CORS
 	app.Use(cors.New(cors.Config{
-		AllowOrigins: "http://localhost",                       // Update with the actual URL of your React app
-		AllowHeaders: "Origin, Content-Type, Accept, Authorization", // Include "Authorization" here
+		AllowOrigins: "http://localhost",                      
+		AllowHeaders: "Origin, Content-Type, Accept, Authorization", 
 	}))
 
-	// Define routes
 	routes.DefineRoutes(app)
 
-	// Start the Fiber app
-	port := 8080 // You can change this to your desired port
+	port := 8080 
 	routes.StartApp(app, port)
 }
